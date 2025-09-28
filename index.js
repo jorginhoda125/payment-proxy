@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY || "minhaChave";
 
 app.post("/processPayment", async (req, res) => {
   try {
-    const response = await fetch("https://nhonga.net/api/payment/mobile", {
+    const response = await fetch("https://vendorapay.com/api/payment/mobile", {
       method: "POST",
       headers: {
         "apiKey": API_KEY,
